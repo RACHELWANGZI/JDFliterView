@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button setTitle:@"筛选" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor orangeColor];
+    button.frame = CGRectMake(90, 90, 90, 90);
+    [self.view addSubview:button];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
